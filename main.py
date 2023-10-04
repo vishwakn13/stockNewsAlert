@@ -11,7 +11,7 @@ STOCK_API_KEY = "143P6EZSCWLKFEH0"
 NEWS_API_KEY = "e06f754c8e8449449c9fe23b2c089d28"
 TWILIO_SID = "AC0dcc2dbb26a478e123a8d2edef64a755"
 
-TWILIO_AUTH_TOKEN = "fe262778e3c3ee88bcfaeba9d2794e4c"
+TWILIO_AUTH_TOKEN = "536217d22744f901aed7e190494108d1"
 
 stock_params = {
     "function": "TIME_SERIES_DAILY_ADJUSTED",
@@ -53,11 +53,11 @@ if abs(diff_percent) > .1:
     articles = news_response.json()["articles"]
     print(articles)
 
-    three_articles = articles[:3]
-    print(three_articles)
+    printed_articles = articles[:25]
+    print(printed_articles)
 
     formatted_articles = [f"{STOCK_NAME}: {up_down}{diff_percent} %\n Headline: {article['title']}. \nBrief: {article['description']}" for article in
-                          three_articles]
+                          printed_articles]
 
     client = Client(TWILIO_SID, TWILIO_AUTH_TOKEN)
 
