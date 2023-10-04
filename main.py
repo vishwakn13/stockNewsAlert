@@ -7,11 +7,6 @@ COMPANY_NAME = "Tesla Stock"
 STOCK_ENDPOINT = "https://www.alphavantage.co/query"
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
 
-STOCK_API_KEY = "143P6EZSCWLKFEH0"
-NEWS_API_KEY = "e06f754c8e8449449c9fe23b2c089d28"
-TWILIO_SID = "AC0dcc2dbb26a478e123a8d2edef64a755"
-
-TWILIO_AUTH_TOKEN = "536217d22744f901aed7e190494108d1"
 
 stock_params = {
     "function": "TIME_SERIES_DAILY_ADJUSTED",
